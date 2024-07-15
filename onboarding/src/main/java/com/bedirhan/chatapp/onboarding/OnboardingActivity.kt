@@ -2,10 +2,7 @@ package com.bedirhan.chatapp.onboarding
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.databinding.DataBindingUtil
 import com.bedirhan.chatapp.onboarding.databinding.ActivityOnboardingBinding
 
@@ -30,10 +27,13 @@ class OnboardingActivity : AppCompatActivity() {
         setUpNextOnboarding()
 
 
+        binding.step1.apply {
+            setBackgroundColor(getColor(com.bedirhan.chatapp.central.R.color.colorPrimary))
+        }
+
         binding.buttonNext.setOnClickListener{
             step+=1
             setUpNextOnboarding()
-
         }
 
 
@@ -45,15 +45,23 @@ class OnboardingActivity : AppCompatActivity() {
             1->{
                 binding.onboardingText.text = getString(com.bedirhan.chatapp.central.R.string.onboarding_first_message)
                 binding.onboardingImage.setImageResource(onboardingImages[step-1])
+                binding.step1.apply {
+                    setBackgroundColor(getColor(com.bedirhan.chatapp.central.R.color.colorPrimary))
+                }
             }
             2->{
                 binding.onboardingText.text = getString(com.bedirhan.chatapp.central.R.string.onboarding_second_message)
                 binding.onboardingImage.setImageResource(onboardingImages[step-1])
+                binding.step2.apply {
+                    setBackgroundColor(getColor(com.bedirhan.chatapp.central.R.color.colorPrimary))
+                }
             }
             3->{
-                binding.onboardingText.text = getString(com.bedirhan.chatapp.central.R.string.onboarding_second_message)
+                binding.onboardingText.text = getString(com.bedirhan.chatapp.central.R.string.onboarding_third_message)
                 binding.onboardingImage.setImageResource(onboardingImages[step-1])
-
+                binding.step3.apply {
+                    setBackgroundColor(getColor(com.bedirhan.chatapp.central.R.color.colorPrimary))
+                }
                 binding.buttonNext.apply {
                     text = getString(com.bedirhan.chatapp.central.R.string.get_started)
                     setBackgroundColor(getColor(com.bedirhan.chatapp.central.R.color.colorOnPrimary))

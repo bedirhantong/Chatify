@@ -29,37 +29,37 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_height="3dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginHorizontal="20dp"
             android:orientation="horizontal"
-            android:weightSum="3.2">
+            android:weightSum="2.4">
 
             <View
                 android:id="@+id/step1"
                 android:background="@color/colorWhite"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="0.6"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.1"/>
+                android:layout_weight="0.3"/>
             <View
                 android:id="@+id/step2"
                 android:background="@color/colorWhite"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="0.6"/>
             <View
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.1"/>
+                android:layout_weight="0.3"/>
             <View
                 android:id="@+id/step3"
                 android:background="@color/colorWhite"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="0.6"/>
 
         </LinearLayout>
 
@@ -94,6 +94,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginBottom="20dp"
                 android:textSize="16sp"
+                android:foreground="?android:selectableItemBackground"
                 app:layout_constraintBottom_toTopOf="@id/buttonSkip"
                 />
 
