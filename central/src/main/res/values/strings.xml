@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_first_message">Welcome to ChatApp! Stay connected with friends and family like never before.</string>
+    <string name="onboarding_second_message">Discover endless conversations and make new connections effortlessly.</string>
+    <string name="onboarding_third_message">Your journey to seamless communication starts here. Let\'s get chatting!</string>
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
+    <string name="get_started">Get Started</string>
+</resources>
